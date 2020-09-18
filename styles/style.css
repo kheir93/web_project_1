@@ -27,7 +27,7 @@
   background-repeat: no-repeat;
 }
 
-.header__logo {
+.logo_place_header {
   position: absolute;
   width: 154px;
   height: 31px;
@@ -45,37 +45,32 @@
   line-height: 96px;
   margin-left: 64px;
   z-index: 1;
-}
-
-.title {
   font-size: 102px;
   font-weight: bold;
 }
 
-.no-margin {
-  margin: 0;
-}
-
 .header__subtitle {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   left: 64px;
   bottom: 30px;
   line-height: 25px;
   width: 388px;
-}
-
-.subtitle {
   font-size: 18px;
   margin: 0;
+  z-index: 1;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
 }
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 
-.header__image {
+.header__main-illustration {
   background-image: url(../images/header-image.png);
-}
-
-.header__image_frame {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -94,23 +89,21 @@
   background-color: #2f80ed;
 }
 
-.descritption {
+.description {
   margin-top: 100px;
   margin-bottom: 100px;
+
 }
 
-.description_margin {
-  margin: 100px auto 100px;
-}
-
-.description_flex-row {
+.two-columns {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.description__object {
+.two-columns__brief {
   color: #2f80ed;
   margin: 0;
   line-height: 1.2;
@@ -118,34 +111,34 @@
   width: 175px;
 }
 
-.description__main-text {
+.two-columns__main-text {
   width: 80%;
   min-width: 784px;
   line-height: 34px;
   font-size: 24px;
 }
 
-.description__paragraph-1 {
+.two-columns__paragraph-1 {
   margin-top: 0;
   margin-bottom: 30px;
 }
 
-.span-accent {
+.two-columns__span-accent {
   font-weight: bold;
 }
 
-.description__paragraph-2 {
+.two-columns__paragraph-2 {
   margin-top: 30px;
   margin-bottom: 0;
 }
 
 .digits {
-    margin-bottom: 100px;
+    margin: 100px auto 100px;
 }
 
-.digits__title {
-  margin-left: auto;
-  margin-right: auto;
+.section-title {
+
+  margin: 0 auto 20px;
   width: 60%;
   display: flex;
   justify-content: center;
@@ -154,7 +147,7 @@
   font-size: 60px;
 }
 
-.digits__subtitle {
+.section-subtitle {
   font-weight: normal;
   display:flex;
   justify-content: center;
@@ -164,7 +157,7 @@
   font-size: 24px;
 }
 
-.digits__table {
+.table {
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -173,18 +166,18 @@
   width: 1100px;
 }
 
-.digits__table_cell {
+.table__cell {
   margin-top: 60px;
   width: 250px;
 }
 
-.digits__table_cell-title {
+.table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
 }
 
-.digits__table_cell-text {
+.table__text {
   font-weight: normal;
   margin-top: 20;
   line-height: 1.2;
@@ -204,30 +197,25 @@
 
 .feynman__image {
   background-image: url(../images/feynman.png);
-}
-
-.feynman__image-frame {
   width: 867px;
   height: 637px;
   position: absolute;
   bottom: 0;
   left: 0;
-  }
+}
+
 
 .feynman__title {
   position: relative;
-  display: block;
+  display: flex;
   text-align: center;
-
-}
-
-.feynman__title-text {
   width: 775px;
   line-height: 1.15;
   font-size: 120px;
-  margin-top: 100px;
+  padding-top: 100px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 70px;
 }
 
 .feynman__subtitle {
@@ -238,6 +226,7 @@
 }
 
 .feynman__subtitle-text {
+  margin: 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -247,9 +236,8 @@
 
 .feynman__link {
   position: absolute;
-  right: 0;
+  right: 48px;
   display: flex;
-  flex-direction: row-reverse;
   margin-top: 0;
 }
 
@@ -257,28 +245,50 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: relative;
   background-color: #1f1f1f;
   color: white;
-  margin-left: auto;
-  margin-right: auto;
   padding-bottom: 90px;
-  height: 100vh;
 }
 
-
-.kaufman__image {
+.kaufman__triangle {
+  height: 877px;
+  width: 877px;
   position: absolute;
   right: -210px;
-  z-index: 0;
   background-image: url(../images/kaufman-triangle.svg);
-
 }
 
-.kaufman__image-frame {
-  width: 877px;
-  height: 877px;
+.section-title__theme_dark {
+  width: 60%;
+  z-index: 1;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 90px auto 20px auto;
+  text-align: center;
+}
+
+.section-subtitle__theme_dark {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.table__table_theme_dark {
+  width: 1100px;
+  margin: 0 auto 90px auto;
+  z-index: 1;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 /* including elements with key-value modifiers */
@@ -286,74 +296,32 @@
 .table__cell_theme_dark {
   width: 200px;
   color: white;
-  margin-right: 0;
   margin-top: 80px;
-}
-
-.kaufman__title {
-  width: 60%;
-  z-index: 1;
-}
-
-.kaufman__title-text {
-   line-height: 1.15;
-   font-size: 60px;
-   font-weight: bold;
-   margin: 90px auto 20px auto;
-   text-align: center;
-}
-
-.kaufman__subtitle {
-  width: 60%;
-  display: flex;
-  z-index: 1;
-}
-
-.kaufman__subtitle-text {
-  margin: 0 auto 0 auto;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-
-}
-
-.kaufman__table {
-  width: 1100px;
-  height: 100vh;
-  margin: 0 auto 90px auto;
-  z-index: 1;
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.kaufman__table_cell {
   display: flex;
   flex-direction: column;
-  width: 200px;
-  margin: 80px 0 0 0;
+  align-content: flex-start;
+  align-self: flex-start;
 }
 
-.kaufman__table_cell-title {
-  margin-top: 0;
-  margin-bottom: 0;
+.table__heading_theme_dark {
   line-height: 1.15;
   font-size: 35px;
   font-weight: bold;
 }
 
-.kaufman__table_cell-content {
-  margin-top: 20px 0 0 0;
+.table__text_theme_dark {
+  display: flex;
+  align-content: flex-end;
   line-height: 1.2;
   font-size: 18px;
-  display: flex;
-  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .footer {
   min-width: 1100px;
   max-width: 1600px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   margin: 0 auto;
   background-color: #1f1f1f;
   color: white;
