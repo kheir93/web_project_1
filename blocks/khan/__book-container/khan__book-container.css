@@ -1,0 +1,11 @@
+.khan__book-container {
+  object-fit: contain;
+  object-fit: cover;
+  position: relative;
+  bottom: -68px;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  min-width: 620px;
+  max-height: 608px;
+}

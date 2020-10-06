@@ -1,0 +1,12 @@
+@import url(./_rotation/header__square-pic_rotation.css);
+
+.header__square-pic {
+  animation: rotation linear infinite 20s;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  width: 568px;
+  height: 568px;
+  background-color: #2f80ed;
+  transform: rotate(-15deg);
+}
