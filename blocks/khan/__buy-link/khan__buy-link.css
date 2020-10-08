@@ -4,10 +4,9 @@
   line-height: 42px;
   font-size: 30px;
   font-weight: normal;
-  margin-left: auto;
   margin-top: 0;
-  margin-left: 0;
-  text-align: top;
+  margin-left:  48px;
+  text-align: start;
 }
 
 .khan__buy-link:hover {

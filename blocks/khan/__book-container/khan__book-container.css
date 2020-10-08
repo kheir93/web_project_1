@@ -1,10 +1,9 @@
 .khan__book-container {
-
-  object-fit: cover;
   margin-top: 68px;
-  margin-bottom: -200px;
+
   display: flex;
-  flex-direction: row;
-  min-width: 620px;
-  max-height: 608px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 620px;
+  height: 608px;
 }
